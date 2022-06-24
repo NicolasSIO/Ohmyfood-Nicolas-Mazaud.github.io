@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+
+body {
+  font-size: 1rem;
+  font-family: $text;
+  font-weight: $regular;
+}
+
+.ohmyfood {
+  font-family: $logo;
+}
+
+.title {
+  font-weight: $bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.location {
+  font-weight: $medium;
+}
+
+.book {
+  p {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+#fonctionnement {
+  h2 {
+    font-weight: $bold;
+    font-size: 1.5rem;
+  }
+}
+
+.description {
+  font-weight: $medium;
+}
+
+footer {
+  h2 {
+    font-size: 1rem;
+  }
+}

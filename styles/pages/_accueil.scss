@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+}
+
+.location {
+  background-color: #ebeaeb;
+  padding: 1rem;
+  position: relative;
+  z-index: -1;
+}
+
+.fa-location-dot {
+  padding: 0 1%;
+}
+
+.book {
+  padding: 2rem 0 4rem 0;
+  background-color: #f7f7f6;
+
+  .title {
+    padding: 0 14% 1rem 14%;
+  }
+
+  p {
+    padding: 0 7% 2rem 7%;
+  }
+
+  a {
+    padding: 4%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from($secondary),
+      to($primary)
+    );
+    box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
+      0 2px 15px -5px rgb(0 0 0 / 70%);
+    border-radius: 25px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.numero {
+  background-color: $primary;
+  color: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  text-align: center;
+  line-height: 25px;
+  z-index: 1;
+  left: 4%;
+  font-weight: 400;
+}
+
+.grey-icons {
+  color: #7f7f7e;
+}
+
+#fonctionnement {
+  margin: 3rem 4%;
+
+  h2 {
+    text-align: left;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+.step {
+  background-color: #f7f7f6;
+  border-radius: 10%;
+  padding: 5%;
+  margin-top: 2rem;
+
+  &:active {
+    background: lighten($color: $primary, $amount: 35%);
+
+    i {
+      color: $primary;
+    }
+  }
+}
+
+.description {
+  line-height: 2rem;
+  width: 100%;
+  text-align: left;
+
+  i {
+    padding: 0 8% 0 8%;
+    font-size: 1.2rem;
+  }
+}
