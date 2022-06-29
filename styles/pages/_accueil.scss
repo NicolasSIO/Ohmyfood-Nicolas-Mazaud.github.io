@@ -26,7 +26,7 @@ main {
   }
 
   p {
-    padding: 0 7% 2rem 7%;
+    padding: 0 7% 3rem 7%;
   }
 
   a {
@@ -59,7 +59,6 @@ main {
   line-height: 25px;
   z-index: 1;
   left: 4%;
-  font-weight: 400;
 }
 
 .grey-icons {
@@ -80,9 +79,12 @@ main {
 
 .step {
   background-color: #f7f7f6;
-  border-radius: 10%;
+  border-radius: 20px;
   padding: 5%;
   margin-top: 2rem;
+  margin-left: 10px;
+  box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
+    0 2px 15px -5px rgb(0 0 0 / 70%);
 
   &:active {
     background: lighten($color: $primary, $amount: 35%);
@@ -100,6 +102,56 @@ main {
 
   i {
     padding: 0 8% 0 8%;
-    font-size: 1.2rem;
   }
+}
+
+#restaurants {
+  text-align: left;
+  padding: 3rem 4%;
+  background-color: #f7f7f6;
+}
+
+.card {
+  color: black;
+  width: 100%;
+  height: 250px;
+  margin: 5rem 0;
+  border-radius: 20px;
+  box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
+    0 2px 15px -5px rgb(0 0 0 / 70%);
+  padding-bottom: 4.5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.card-new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: $tertiary;
+  color: darken($color: $tertiary, $amount: 30%);
+  z-index: 1;
+  border: 1px solid darken($color: $tertiary, $amount: 30%);
+  padding: 2%;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5% 1rem 2%;
+  border-radius: 0 0 20px 20px;
+}
+
+.card-name {
+  padding-bottom: 0.5rem;
 }

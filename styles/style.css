@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 html,
 body,
 div,
@@ -161,7 +161,7 @@ h2 {
 
 .book p {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 #fonctionnement h2 {
@@ -172,14 +172,38 @@ h2 {
 .description {
   font-weight: 500;
 }
+.description i {
+  font-size: 1.2rem;
+}
+
+.numero {
+  font-weight: 400;
+}
+
+.card-new {
+  font-size: 0.9rem;
+}
+
+.card-name {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.card-location {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+.fa-heart {
+  font-size: 1.6rem;
+}
 
 footer h2 {
   font-size: 1rem;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 main {
@@ -201,24 +225,20 @@ main {
   padding: 2rem 0 4rem 0;
   background-color: #f7f7f6;
 }
-
 .book .title {
   padding: 0 14% 1rem 14%;
 }
-
 .book p {
-  padding: 0 7% 2rem 7%;
+  padding: 0 7% 3rem 7%;
 }
-
 .book a {
   padding: 4%;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
   border-radius: 25px;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -233,7 +253,6 @@ main {
   line-height: 25px;
   z-index: 1;
   left: 4%;
-  font-weight: 400;
 }
 
 .grey-icons {
@@ -243,26 +262,24 @@ main {
 #fonctionnement {
   margin: 3rem 4%;
 }
-
 #fonctionnement h2 {
   text-align: left;
 }
-
 #fonctionnement a {
   color: black;
 }
 
 .step {
   background-color: #f7f7f6;
-  border-radius: 10%;
+  border-radius: 20px;
   padding: 5%;
   margin-top: 2rem;
+  margin-left: 10px;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
 }
-
 .step:active {
   background: #f2eafb;
 }
-
 .step:active i {
   color: #9356dc;
 }
@@ -272,29 +289,77 @@ main {
   width: 100%;
   text-align: left;
 }
-
 .description i {
   padding: 0 8% 0 8%;
-  font-size: 1.2rem;
+}
+
+#restaurants {
+  text-align: left;
+  padding: 3rem 4%;
+  background-color: #f7f7f6;
+}
+
+.card {
+  color: black;
+  width: 100%;
+  height: 250px;
+  margin: 5rem 0;
+  border-radius: 20px;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  padding-bottom: 4.5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.card-new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: #32b091;
+  z-index: 1;
+  border: 1px solid #32b091;
+  padding: 2%;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5% 1rem 2%;
+  border-radius: 0 0 20px 20px;
+}
+
+.card-name {
+  padding-bottom: 0.5rem;
 }
 
 header {
-  -webkit-box-shadow: 0 4px 5px lightgray;
-          box-shadow: 0 4px 5px lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0 4px 5px lightgray;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 h2 {
   margin: 1rem 0;
 }
 
-.fa-arrow-left {
+.accueil {
   display: none;
+}
+
+.restaurant {
+  display: initial;
 }
 
 footer {
@@ -302,7 +367,6 @@ footer {
   padding: 1rem 0 1rem 4%;
   color: white;
 }
-
 footer h2 {
   margin: 0;
   padding-bottom: 1rem;
@@ -315,5 +379,4 @@ li {
 a {
   text-decoration: none;
   color: white;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
