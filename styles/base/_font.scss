@@ -10,6 +10,11 @@ body {
   font-family: $logo;
 }
 
+.name-restaurant {
+  font-family: $logo;
+  font-size: 1.7rem;
+}
+
 .title {
   font-weight: $bold;
   font-size: 1.5rem;
@@ -49,22 +54,43 @@ h2 {
   font-weight: 400;
 }
 
-.card-new {
-  font-size: 0.9rem;
+#restaurants {
+  .card-new {
+    font-size: 0.9rem;
+  }
+
+  .card-name {
+    font-weight: $medium;
+    font-size: 1.2rem;
+  }
+
+  .card-location {
+    font-weight: 100;
+    font-size: 1.1rem;
+  }
 }
 
-.card-name {
-  font-weight: $medium;
-  font-size: 1.2rem;
-}
+#menu {
+  h3 {
+    text-transform: uppercase;
+  }
 
-.card-location {
-  font-weight: 100;
-  font-size: 1.1rem;
+  .card-name {
+    font-weight: $medium;
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-weight: $bold;
+  }
 }
 
 .fa-heart {
   font-size: 1.6rem;
+}
+
+.restaurant {
+  font-size: 1.5rem;
 }
 
 footer {

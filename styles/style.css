@@ -146,6 +146,11 @@ body {
   font-family: Shrikhand;
 }
 
+.name-restaurant {
+  font-family: Shrikhand;
+  font-size: 1.7rem;
+}
+
 .title {
   font-weight: 700;
   font-size: 1.5rem;
@@ -180,22 +185,35 @@ h2 {
   font-weight: 400;
 }
 
-.card-new {
+#restaurants .card-new {
   font-size: 0.9rem;
 }
-
-.card-name {
+#restaurants .card-name {
   font-weight: 500;
   font-size: 1.2rem;
 }
-
-.card-location {
+#restaurants .card-location {
   font-weight: 100;
   font-size: 1.1rem;
 }
 
+#menu h3 {
+  text-transform: uppercase;
+}
+#menu .card-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+#menu .price {
+  font-weight: 700;
+}
+
 .fa-heart {
   font-size: 1.6rem;
+}
+
+.restaurant {
+  font-size: 1.5rem;
 }
 
 footer h2 {
@@ -213,7 +231,6 @@ main {
 .location {
   background-color: #ebeaeb;
   padding: 1rem;
-  position: relative;
   z-index: -1;
 }
 
@@ -231,7 +248,7 @@ main {
 .book p {
   padding: 0 7% 3rem 7%;
 }
-.book a {
+.book .btn {
   padding: 4%;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
@@ -293,27 +310,24 @@ main {
   padding: 0 8% 0 8%;
 }
 
+.relative {
+  position: relative;
+}
+
 #restaurants {
   text-align: left;
   padding: 3rem 4%;
   background-color: #f7f7f6;
 }
-
-.card {
+#restaurants .card {
   color: black;
   width: 100%;
   height: 250px;
-  margin: 5rem 0;
   border-radius: 20px;
   box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
-  padding-bottom: 4.5rem;
+  margin-bottom: 3rem;
 }
-
-.relative {
-  position: relative;
-}
-
-.card-img {
+#restaurants .card-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -321,8 +335,7 @@ main {
   border-radius: 20px 20px 0 0;
   position: relative;
 }
-
-.card-new {
+#restaurants .card-new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -332,22 +345,92 @@ main {
   border: 1px solid #32b091;
   padding: 2%;
 }
-
-.card-body {
+#restaurants .card-body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 5% 1rem 2%;
   border-radius: 0 0 20px 20px;
 }
-
-.card-name {
+#restaurants .card-name {
   padding-bottom: 0.5rem;
+}
+
+main {
+  background-color: #f7f7f6;
+}
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+main .content {
+  padding: 4rem 5% 0 5%;
+}
+
+.info-restaurant {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  align-items: center;
+  padding: 3rem 5%;
+  height: 4rem;
+  background-color: #f7f7f6;
+}
+
+#menu section {
+  margin-bottom: 3rem;
+}
+#menu h3 {
+  text-align: left;
+}
+#menu h3::after {
+  border: 1px solid #99e2d0;
+  background-color: #99e2d0;
+  width: 40px;
+  margin-top: 0.3rem;
+  display: block;
+  content: "";
+  box-sizing: border-box;
+}
+#menu .card {
+  height: 4rem;
+  margin: 1rem 0;
+  padding: 1rem 5% 1rem 2%;
+  line-height: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+}
+#menu .card-info {
+  display: flex;
+  justify-content: space-between;
+}
+#menu .btn {
+  padding: 4%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+}
+#menu .commander {
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  display: inline-block;
 }
 
 header {
   box-shadow: 0 4px 5px lightgray;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
@@ -359,7 +442,11 @@ h2 {
 }
 
 .restaurant {
-  display: initial;
+  display: inline;
+  color: black;
+  position: absolute;
+  left: 30px;
+  top: 20px;
 }
 
 footer {

@@ -2,6 +2,8 @@ header {
   box-shadow: 0 4px 5px lightgray;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
@@ -13,5 +15,9 @@ h2 {
 }
 
 .restaurant {
-  display: initial;
+  display: inline;
+  color: black;
+  position: absolute;
+  left: 30px;
+  top: 20px;
 }
