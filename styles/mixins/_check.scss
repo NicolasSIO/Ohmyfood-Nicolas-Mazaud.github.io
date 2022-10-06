@@ -1,0 +1,36 @@
+.check {
+  margin-right: -25%;
+  background-color: $tertiary;
+  width: 75px;
+  position: relative;
+}
+
+.fa-check {
+  color: $tertiary;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+.card-menu:hover {
+  .card-info {
+    animation: decale-coche 1.5s forwards;
+  }
+}
+
+@keyframes decale-coche {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 85%;
+  }
+}

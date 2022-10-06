@@ -24,6 +24,9 @@ main {
   padding: 3rem 5%;
   height: 4rem;
   background-color: #f7f7f6;
+  label {
+    @include like;
+  }
 }
 
 #menu {
@@ -44,21 +47,29 @@ main {
     }
   }
 
-  .card {
-    height: 4rem;
+  .card-menu {
+    overflow: hidden;
     margin: 1rem 0;
-    padding: 1rem 5% 1rem 2%;
-    line-height: 1.5rem;
+    //opacity: 0;
     border-radius: 10px;
-    text-align: left;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
     box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
       0 2px 15px -5px rgb(0 0 0 / 70%);
   }
 
   .card-info {
+    width: 100%;
+    height: 4rem;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+
+  .card-details {
     display: flex;
     justify-content: space-between;
   }

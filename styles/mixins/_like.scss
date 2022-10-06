@@ -1,0 +1,31 @@
+@mixin like {
+  .hidden {
+    visibility: hidden;
+  }
+
+  .fa-heart {
+    font-size: 1.7rem;
+  }
+
+  input[type="checkbox"]:checked ~ i {
+    font-weight: 900;
+    opacity: 1;
+    background: linear-gradient(45deg, $secondary 0%, $primary 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: likeAnim 1.5s;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  @keyframes likeAnim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

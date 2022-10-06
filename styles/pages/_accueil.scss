@@ -147,6 +147,9 @@ main {
     justify-content: space-between;
     padding: 1rem 5% 1rem 2%;
     border-radius: 0 0 20px 20px;
+    label {
+      @include like;
+    }
   }
 
   .card-name {
