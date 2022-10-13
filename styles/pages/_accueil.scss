@@ -27,20 +27,6 @@ main {
   p {
     padding: 0 7% 3rem 7%;
   }
-
-  .btn {
-    padding: 4%;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from($secondary),
-      to($primary)
-    );
-    box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
-      0 2px 15px -5px rgb(0 0 0 / 70%);
-    border-radius: 25px;
-  }
 }
 
 .flex {

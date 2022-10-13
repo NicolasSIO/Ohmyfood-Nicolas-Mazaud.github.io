@@ -9,56 +9,14 @@
   }
 }
 
-#entrees {
-  .card-menu {
-    animation: fade 1s both;
+.card-menu {
+  animation: fade 2s linear;
+  $start: 0.5s;
 
-    &:nth-child(1) {
-      animation-delay: 0.5s;
-    }
-
-    &:nth-child(2) {
-      animation-delay: 0.75s;
-    }
-
-    &:nth-child(3) {
-      animation-delay: 1s;
-    }
-  }
-}
-
-#plats {
-  .card-menu {
-    animation: fade 1s both;
-
-    &:nth-child(1) {
-      animation-delay: 1.25s;
-    }
-
-    &:nth-child(2) {
-      animation-delay: 1.5s;
-    }
-
-    &:nth-child(3) {
-      animation-delay: 1.75s;
-    }
-  }
-}
-
-#desserts {
-  .card-menu {
-    animation: fade 1s both;
-
-    &:nth-child(1) {
-      animation-delay: 2s;
-    }
-
-    &:nth-child(2) {
-      animation-delay: 2.72s;
-    }
-
-    &:nth-child(3) {
-      animation-delay: 2.5s;
+  @for $i from 1 to 12 {
+    &:nth-of-type($i) {
+      $start: $start + 0.25s;
+      animation-delay: $start;
     }
   }
 }

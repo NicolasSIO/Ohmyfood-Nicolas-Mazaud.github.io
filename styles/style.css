@@ -220,6 +220,17 @@ footer h2 {
   font-size: 1rem;
 }
 
+.btn-gradient {
+  padding: 4%;
+  background: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+}
+.btn-gradient:hover {
+  background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
+  box-shadow: 0 0.3px 10px 5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+}
+
 .check {
   margin-right: -25%;
   background-color: #99e2d0;
@@ -373,55 +384,53 @@ footer h2 {
     opacity: 1;
   }
 }
-#entrees .card-menu {
-  -webkit-animation: fade 1s both;
-          animation: fade 1s both;
+.card-menu {
+  -webkit-animation: fade 2s linear;
+          animation: fade 2s linear;
 }
-#entrees .card-menu:nth-child(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-#entrees .card-menu:nth-child(2) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
-#entrees .card-menu:nth-child(3) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-
-#plats .card-menu {
-  -webkit-animation: fade 1s both;
-          animation: fade 1s both;
-}
-#plats .card-menu:nth-child(1) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s;
 }
-#plats .card-menu:nth-child(2) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
-#plats .card-menu:nth-child(3) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
 }
-
-#desserts .card-menu {
-  -webkit-animation: fade 1s both;
-          animation: fade 1s both;
-}
-#desserts .card-menu:nth-child(1) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-#desserts .card-menu:nth-child(2) {
-  -webkit-animation-delay: 2.72s;
-          animation-delay: 2.72s;
+.card-menu:nth-of-type($i) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
 }
-#desserts .card-menu:nth-child(3) {
+.card-menu:nth-of-type($i) {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
+}
+.card-menu:nth-of-type($i) {
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
+}
+.card-menu:nth-of-type($i) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.card-menu:nth-of-type($i) {
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
 }
 
 .side-dish {
@@ -457,12 +466,6 @@ main {
 }
 .book p {
   padding: 0 7% 3rem 7%;
-}
-.book .btn {
-  padding: 4%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
-  border-radius: 25px;
 }
 
 .flex {
@@ -690,12 +693,6 @@ main .content {
 #menu .card-details {
   display: flex;
   justify-content: space-between;
-}
-#menu .btn {
-  padding: 4%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
-  border-radius: 25px;
 }
 #menu .commander {
   padding: 1rem 3rem;

@@ -1,0 +1,17 @@
+.btn-gradient {
+  padding: 4%;
+  background: linear-gradient(175deg, $secondary 0%, $primary 100%);
+  box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
+    0 2px 15px -5px rgb(0 0 0 / 70%);
+  border-radius: 25px;
+
+  &:hover {
+    background: linear-gradient(
+      175deg,
+      lighten($color: $secondary, $amount: 5%) 0%,
+      lighten($color: $primary, $amount: 5%) 100%
+    );
+    box-shadow: 0 0.3px 10px 5px rgb(0 0 0 / 35%),
+      0 2px 15px -5px rgb(0 0 0 / 70%);
+  }
+}
