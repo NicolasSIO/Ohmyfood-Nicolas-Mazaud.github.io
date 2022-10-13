@@ -373,55 +373,55 @@ footer h2 {
     opacity: 1;
   }
 }
-#entrees .card {
+#entrees .card-menu {
   -webkit-animation: fade 1s both;
           animation: fade 1s both;
 }
-#entrees .card:nth-child(1) {
+#entrees .card-menu:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+#entrees .card-menu:nth-child(2) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+#entrees .card-menu:nth-child(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-#entrees .card:nth-child(2) {
+
+#plats .card-menu {
+  -webkit-animation: fade 1s both;
+          animation: fade 1s both;
+}
+#plats .card-menu:nth-child(1) {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s;
 }
-#entrees .card:nth-child(3) {
+#plats .card-menu:nth-child(2) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
-
-#plats .card {
-  -webkit-animation: fade 1s both;
-          animation: fade 1s both;
-}
-#plats .card:nth-child(1) {
+#plats .card-menu:nth-child(3) {
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
 }
-#plats .card:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-#plats .card:nth-child(3) {
-  -webkit-animation-delay: 2.25s;
-          animation-delay: 2.25s;
-}
 
-#desserts .card {
+#desserts .card-menu {
   -webkit-animation: fade 1s both;
           animation: fade 1s both;
 }
-#desserts .card:nth-child(1) {
+#desserts .card-menu:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+#desserts .card-menu:nth-child(2) {
+  -webkit-animation-delay: 2.72s;
+          animation-delay: 2.72s;
+}
+#desserts .card-menu:nth-child(3) {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
-}
-#desserts .card:nth-child(2) {
-  -webkit-animation-delay: 2.75s;
-          animation-delay: 2.75s;
-}
-#desserts .card:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
 }
 
 .side-dish {
