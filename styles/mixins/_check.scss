@@ -34,3 +34,15 @@
     width: 85%;
   }
 }
+
+@media screen and (min-width: 992px) {
+  @keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+
+    100% {
+      width: 93%;
+    }
+  }
+}

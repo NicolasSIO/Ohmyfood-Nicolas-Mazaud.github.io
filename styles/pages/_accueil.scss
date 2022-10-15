@@ -26,6 +26,10 @@ main {
 
   p {
     padding: 0 7% 3rem 7%;
+
+    @media screen and (min-width: 992px) {
+      padding: 1rem 7% 3rem 7%;
+    }
   }
 }
 
@@ -44,6 +48,12 @@ main {
   line-height: 25px;
   z-index: 1;
   left: 4%;
+
+  @media screen and (min-width: 992px) {
+    height: 27px;
+    width: 27px;
+    line-height: 27px;
+  }
 }
 
 .grey-icons {
@@ -68,6 +78,7 @@ main {
   padding: 5%;
   margin-top: 2rem;
   margin-left: 10px;
+  align-items: center;
   box-shadow: 0 0.3px 1.3px -5px rgb(0 0 0 / 35%),
     0 2px 15px -5px rgb(0 0 0 / 70%);
 
@@ -78,6 +89,11 @@ main {
       color: $primary;
     }
   }
+
+  @media screen and (min-width: 992px) {
+    padding: 2% 0;
+    margin-top: 1.5rem;
+  }
 }
 
 .description {
@@ -85,8 +101,16 @@ main {
   width: 100%;
   text-align: left;
 
+  @media screen and (min-width: 992px) {
+    align-items: center;
+  }
+
   i {
     padding: 0 8% 0 8%;
+
+    @media screen and (min-width: 992px) {
+      padding: 0 3% 0 5%;
+    }
   }
 }
 

@@ -67,14 +67,16 @@ main {
     justify-content: space-around;
     line-height: 1.5rem;
     text-align: left;
+
+    @media screen and (min-width: 992px) {
+      padding: 0 2%;
+    }
   }
 
   .card-details {
     display: flex;
     justify-content: space-between;
   }
-
-  
 
   .commander {
     padding: 1rem 3rem;
