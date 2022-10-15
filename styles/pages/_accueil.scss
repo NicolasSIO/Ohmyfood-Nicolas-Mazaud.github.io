@@ -154,6 +154,10 @@ main {
     z-index: 1;
     border: 1px solid darken($color: $tertiary, $amount: 30%);
     padding: 2%;
+
+    @media screen and (min-width: 1300px) {
+      padding: 1%;
+    }
   }
 
   .card-body {
