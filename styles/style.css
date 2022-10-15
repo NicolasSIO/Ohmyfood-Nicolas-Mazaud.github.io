@@ -237,7 +237,12 @@ footer h2 {
 }
 @media screen and (min-width: 992px) {
   .btn-gradient {
-    padding: 2%;
+    padding: 1.5%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .btn-gradient {
+    padding: 1%;
   }
 }
 
@@ -299,6 +304,24 @@ footer h2 {
     }
     100% {
       width: 93%;
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  @-webkit-keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 91%;
+    }
+  }
+  @keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 91%;
     }
   }
 }
@@ -562,6 +585,11 @@ main {
     margin-top: 1.5rem;
   }
 }
+@media screen and (min-width: 1300px) {
+  .step {
+    padding: 1.5% 0;
+  }
+}
 
 .description {
   line-height: 2rem;
@@ -588,7 +616,7 @@ main {
 
 #restaurants {
   text-align: left;
-  padding: 3rem 4%;
+  margin: 3rem 4%;
   background-color: #f7f7f6;
 }
 #restaurants .card {
@@ -762,6 +790,24 @@ main .content {
   padding: 1rem 3rem;
   margin: 1rem 0;
   display: inline-block;
+}
+@media screen and (min-width: 1300px) {
+  #menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #menu #entrees,
+#menu #plats,
+#menu #desserts {
+    width: 45%;
+  }
+  #menu .commander {
+    width: 45%;
+    height: 10%;
+    margin-top: 9%;
+  }
 }
 
 header {

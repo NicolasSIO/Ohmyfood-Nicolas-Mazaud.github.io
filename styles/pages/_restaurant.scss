@@ -83,4 +83,23 @@ main {
     margin: 1rem 0;
     display: inline-block;
   }
+
+  @media screen and (min-width: 1300px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    #entrees,
+    #plats,
+    #desserts {
+      width: 45%;
+    }
+
+    .commander {
+      width: 45%;
+      height: 10%;
+      margin-top: 9%;
+    }
+  }
 }
