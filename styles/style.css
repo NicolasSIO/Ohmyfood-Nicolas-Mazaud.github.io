@@ -156,6 +156,7 @@ body {
   font-size: 1.5rem;
 }
 
+h1,
 h2 {
   font-size: 2rem;
 }
@@ -271,7 +272,28 @@ footer h2 {
   -webkit-animation: decale-coche 1.5s forwards;
           animation: decale-coche 1.5s forwards;
 }
+.card-menu:hover .fa-check {
+  -webkit-animation: rotate 1.5s both;
+          animation: rotate 1.5s both;
+}
 
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 @-webkit-keyframes decale-coche {
   0% {
     width: 100%;
@@ -280,7 +302,6 @@ footer h2 {
     width: 85%;
   }
 }
-
 @keyframes decale-coche {
   0% {
     width: 100%;
@@ -619,6 +640,9 @@ main {
   margin: 3rem 4%;
   background-color: #f7f7f6;
 }
+#restaurants h2 {
+  margin-bottom: 2rem;
+}
 #restaurants .card {
   color: black;
   width: 100%;
@@ -823,7 +847,7 @@ header {
   z-index: 1;
 }
 
-h2 {
+h1 {
   margin: 1rem 0;
 }
 
@@ -843,13 +867,25 @@ footer {
   background-color: #343435;
   padding: 1rem 0 1rem 4%;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 footer h2 {
   margin: 0;
   padding-bottom: 1rem;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
 }
 footer li {
   padding: 0.25rem;
+}
+@media screen and (min-width: 1300px) {
+  footer li {
+    padding: 0.5rem;
+  }
 }
 
 a {

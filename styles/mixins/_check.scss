@@ -23,6 +23,20 @@
   .card-info {
     animation: decale-coche 1.5s forwards;
   }
+
+  .fa-check {
+    animation: rotate 1.5s both;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes decale-coche {
