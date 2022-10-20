@@ -241,7 +241,7 @@ footer h2 {
     padding: 1.5%;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .btn-gradient {
     padding: 1%;
   }
@@ -310,6 +310,42 @@ footer h2 {
     width: 85%;
   }
 }
+@media screen and (min-width: 500px) {
+  @-webkit-keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  @keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  @-webkit-keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 92%;
+    }
+  }
+  @keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 92%;
+    }
+  }
+}
 @media screen and (min-width: 992px) {
   @-webkit-keyframes decale-coche {
     0% {
@@ -328,7 +364,7 @@ footer h2 {
     }
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   @-webkit-keyframes decale-coche {
     0% {
       width: 100%;
@@ -462,50 +498,6 @@ footer h2 {
   -webkit-animation: fade 2s linear;
           animation: fade 2s linear;
 }
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 1.25s;
-          animation-delay: 1.25s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 2.25s;
-          animation-delay: 2.25s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 2.75s;
-          animation-delay: 2.75s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.card-menu:nth-of-type($i) {
-  -webkit-animation-delay: 3.25s;
-          animation-delay: 3.25s;
-}
 
 .side-dish {
   text-overflow: ellipsis;
@@ -606,7 +598,7 @@ main {
     margin-top: 1.5rem;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .step {
     padding: 1.5% 0;
   }
@@ -669,7 +661,7 @@ main {
   border: 1px solid #32b091;
   padding: 2%;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   #restaurants .card-new {
     padding: 1%;
   }
@@ -820,7 +812,7 @@ main .content {
   margin: 1rem 0;
   display: inline-block;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   #menu {
     display: flex;
     flex-direction: row;
@@ -882,7 +874,7 @@ footer ul {
 footer li {
   padding: 0.25rem;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   footer li {
     padding: 0.5rem;
   }

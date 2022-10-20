@@ -49,6 +49,30 @@
   }
 }
 
+@media screen and (min-width: 500px) {
+  @keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+
+    100% {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  @keyframes decale-coche {
+    0% {
+      width: 100%;
+    }
+
+    100% {
+      width: 92%;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   @keyframes decale-coche {
     0% {
@@ -61,7 +85,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   @keyframes decale-coche {
     0% {
       width: 100%;

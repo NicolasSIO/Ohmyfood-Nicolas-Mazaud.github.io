@@ -12,13 +12,6 @@
 .card-menu {
   animation: fade 2s linear;
   $start: 0.5s;
-
-  @for $i from 1 to 12 {
-    &:nth-of-type($i) {
-      $start: $start + 0.25s;
-      animation-delay: $start;
-    }
-  }
 }
 
 .side-dish {
