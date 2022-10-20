@@ -90,6 +90,14 @@ main {
     }
   }
 
+  &:hover {
+    background: lighten($color: $primary, $amount: 35%);
+
+    i {
+      color: $primary;
+    }
+  }
+
   @media screen and (min-width: 992px) {
     padding: 2% 0;
     margin-top: 1.5rem;
