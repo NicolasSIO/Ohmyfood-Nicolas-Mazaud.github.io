@@ -167,7 +167,7 @@ h2 {
 
 .book p {
   font-size: 1.1rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 #fonctionnement h2 {
@@ -194,7 +194,7 @@ h2 {
   font-size: 1.2rem;
 }
 #restaurants .card-location {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.1rem;
 }
 @media screen and (min-width: 992px) {
