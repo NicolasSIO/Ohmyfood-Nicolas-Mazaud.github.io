@@ -876,6 +876,12 @@ footer h2 {
 footer ul {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  footer ul {
+    flex-direction: row;
+  }
 }
 footer li {
   padding: 0.25rem;

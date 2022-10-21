@@ -14,6 +14,11 @@ footer {
   ul {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   li {
